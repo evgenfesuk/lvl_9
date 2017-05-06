@@ -5,6 +5,7 @@
 book::book()
 {
 	publication();
+	numberOfPages = 0;
 }
 
 book::book(std::string bN, float bP, int _numberOfPages)
