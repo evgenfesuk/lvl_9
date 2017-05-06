@@ -19,6 +19,12 @@ void book::set(std::string bN, float bP, int _numberOfPages)
 	numberOfPages = _numberOfPages;
 }
 
+void book::get() const
+{
+	publication::get();
+	std::cout << "Number of pages: " << numberOfPages << std::endl;
+}
+
 
 book::~book()
 {
