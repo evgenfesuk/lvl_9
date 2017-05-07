@@ -2,7 +2,7 @@
 #include "record.h"
 
 
-record::record() : publication(), minutes(0)
+record::record() : publication(), minutes(0), sales()
 {
 }
 
