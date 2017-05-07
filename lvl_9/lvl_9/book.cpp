@@ -2,16 +2,12 @@
 #include "book.h"
 
 
-book::book()
+book::book() : publication(), numberOfPages(0)
 {
-	publication();
-	numberOfPages = 0;
 }
 
-book::book(std::string bN, float bP, int _numberOfPages)
+book::book(std::string bN, float bP, int _numberOfPages) : publication(bN, bP), numberOfPages(_numberOfPages)
 {
-	publication(bN, bP);
-	numberOfPages = _numberOfPages;
 }
 
 void book::set(std::string bN, float bP, int _numberOfPages)
