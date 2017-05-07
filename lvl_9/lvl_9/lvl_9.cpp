@@ -3,10 +3,45 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include "publication.h"
+#include "book.h"
+#include "record.h"
 
 
 int main()
 {
+	std::cout << "Printed (b)ook or (a)udio?" << std::endl;
+	char answer;
+	float bookPrice;
+	std::string bookName;
+	unsigned int numberOfPages;
+	float minutes;
+	std::cin >> answer;
+
+	switch (answer)
+	{
+	case 'b':
+	{
+		std::cout << "Input name, price and number of pages in book: " << std::endl;
+		std::cin >> bookName >> bookPrice >> numberOfPages;
+		book b1(bookName, bookPrice, numberOfPages);
+		b1.get();
+		break;
+	}
+	case 'a':
+	{
+		record r1;
+		std::cout << "Input name, price and lenth in minutes in book: " << std::endl;
+		std::cin >> bookName >> bookPrice >> minutes;
+		r1.set(bookName, bookPrice, minutes);
+		r1.get();
+		break;
+	}
+	default:
+		break;
+	}
+
+	system("pause");
     return 0;
 }
 
