@@ -2,16 +2,12 @@
 #include "record.h"
 
 
-record::record()
+record::record() : publication(), minutes(0)
 {
-	publication();
-	minutes = 0;
 }
 
-record::record(std::string bN, float bP, float _minutes)
+record::record(std::string bN, float bP, float _minutes) : publication(bN, bP), minutes(_minutes)
 {
-	publication(bN, bP);
-	minutes = _minutes;
 }
 
 
