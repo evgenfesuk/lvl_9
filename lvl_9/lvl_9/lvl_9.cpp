@@ -25,7 +25,8 @@ int main()
 	{
 		std::cout << "Input name, price and number of pages in book: " << std::endl;
 		std::cin >> bookName >> bookPrice >> numberOfPages;
-		book b1(bookName, bookPrice, numberOfPages);
+		book b1;
+		b1.set(bookName, bookPrice, numberOfPages);
 		b1.get();
 		break;
 	}
@@ -41,7 +42,6 @@ int main()
 	default:
 		break;
 	}
-
 	system("pause");
     return 0;
 }
