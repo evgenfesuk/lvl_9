@@ -21,7 +21,7 @@ record::~record()
 
 void record::set(std::string bN, float bP, float _minutes)
 {
-	publication(bN, bP);
+	publication::set(bN, bP);
 	minutes = _minutes;
 }
 
