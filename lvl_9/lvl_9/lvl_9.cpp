@@ -6,6 +6,7 @@
 #include "publication.h"
 #include "book.h"
 #include "record.h"
+#include "sales.h"
 
 
 int main()
