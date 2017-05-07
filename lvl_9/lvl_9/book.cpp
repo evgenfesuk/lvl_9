@@ -16,7 +16,7 @@ book::book(std::string bN, float bP, int _numberOfPages)
 
 void book::set(std::string bN, float bP, int _numberOfPages)
 {
-	publication(bN, bP);
+	publication::set(bN, bP);
 	numberOfPages = _numberOfPages;
 }
 
