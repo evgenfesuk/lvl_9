@@ -22,10 +22,9 @@ int main()
 	{
 	case 'b':
 	{
-		book b1;
 		std::cout << "Input name, price and number of pages in book: " << std::endl;
 		std::cin >> bookName >> bookPrice >> numberOfPages;
-		b1.set(bookName, bookPrice, numberOfPages);
+		book b1(bookName, bookPrice, numberOfPages);
 		b1.get();
 		break;
 	}
