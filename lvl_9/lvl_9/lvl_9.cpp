@@ -7,6 +7,7 @@
 #include "book.h"
 #include "record.h"
 #include "sales.h"
+#include "disk.h"
 
 
 int main()
@@ -23,9 +24,9 @@ int main()
 	{
 	case 'b':
 	{
+		book b1;
 		std::cout << "Input name, price and number of pages in book: " << std::endl;
 		std::cin >> bookName >> bookPrice >> numberOfPages;
-		book b1;
 		b1.set(bookName, bookPrice, numberOfPages);
 		b1.get();
 		break;

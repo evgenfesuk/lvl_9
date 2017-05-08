@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="book.h" />
+    <ClInclude Include="disk.h" />
     <ClInclude Include="publication.h" />
     <ClInclude Include="record.h" />
     <ClInclude Include="sales.h" />
@@ -147,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="book.cpp" />
+    <ClCompile Include="disk.cpp" />
     <ClCompile Include="lvl_9.cpp" />
     <ClCompile Include="publication.cpp" />
     <ClCompile Include="record.cpp" />
