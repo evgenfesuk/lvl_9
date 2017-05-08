@@ -23,7 +23,7 @@ sales::~sales()
 
 void sales::set()
 {
-	std::cout << "Input information about sales for last 3 month" << std::endl;
+	std::cout << "\nInput information about sales for last 3 month" << std::endl;
 	for (int i = 0; i < 3; i++)
 	{
 		std::cin >> totalSaled[i];
