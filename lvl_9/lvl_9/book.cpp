@@ -14,6 +14,7 @@ void book::set(std::string bN, float bP, int _numberOfPages)
 {
 	publication::set(bN, bP);
 	numberOfPages = _numberOfPages;
+	d.set(bN, bP);
 	sales::set();
 }
 
@@ -21,6 +22,7 @@ void book::get() const
 {
 	publication::get();
 	std::cout << "Number of pages: " << numberOfPages << std::endl;
+	d.get();
 	sales::get();
 }
 
