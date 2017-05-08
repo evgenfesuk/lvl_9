@@ -1,7 +1,5 @@
 #pragma once
 #include "publication.h"
-#include "book.h"
-#include "record.h"
 #include <conio.h>
 class disk :
 	protected publication
