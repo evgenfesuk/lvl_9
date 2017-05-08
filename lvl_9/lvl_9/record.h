@@ -1,6 +1,7 @@
 #pragma once
 #include "publication.h"
 #include "sales.h"
+#include "disk.h"
 class record :
 	protected publication, protected sales
 {
@@ -12,5 +13,6 @@ public:
 	void get() const;
 protected:
 	float minutes;
+	disk d;
 };
 

@@ -19,6 +19,7 @@ void record::set(std::string bN, float bP, float _minutes)
 {
 	publication::set(bN, bP);
 	minutes = _minutes;
+	d.set(bN, bP);
 	sales::set();
 }
 
@@ -26,5 +27,6 @@ void record::get() const
 {
 	publication::get();
 	std::cout << "Total minutes in book: " << minutes << std::endl;
+	d.get();
 	sales::get();
 }
