@@ -13,9 +13,9 @@ disk::~disk()
 
 void disk::get() const
 {
-	if(cd) std::cout << "Disk type is: CD" << std::endl;
-	else if (dvd) std::cout << "Disk type is: DVD" << std::endl;
-	else std::cout << "Unknown disk type" << std::endl;
+	if(cd) std::cout << "Disk type is: CD" << std::endl; // cd true?
+	else if (dvd) std::cout << "Disk type is: DVD" << std::endl; // dvd true?
+	else std::cout << "Unknown disk type" << std::endl; // cd and dvd false
 }
 
 void disk::set()
@@ -34,7 +34,7 @@ void disk::set()
 		dvd = true;
 		cd = false;
 	}
-	else
+	else // missclick (not 'c' or 'd')
 	{
 		dvd = false;
 		cd = false;
