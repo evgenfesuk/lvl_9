@@ -5,6 +5,7 @@
 publication2::publication2()
 {
 	publication::publication();
+	iDate.set(0, 0, 0);
 }
 
 publication2::publication2(std::string bN, float bP, unsigned short _d, unsigned short _m, unsigned short _y)
