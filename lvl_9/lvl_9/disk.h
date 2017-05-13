@@ -1,8 +1,7 @@
 #pragma once
 #include "publication.h"
 #include <conio.h>
-class disk :
-	protected publication
+class disk
 {
 public:
 	disk();
