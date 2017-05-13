@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include <iostream>
-#include "publication.h"
+#include "publication2.h"
 #include "book.h"
 #include "record.h"
 #include "sales.h"
@@ -17,6 +17,7 @@ int main()
 	float bookPrice;
 	std::string bookName;
 	unsigned int numberOfPages;
+	unsigned short _d, _m, _y;
 	float minutes;
 	std::cin >> answer;
 
@@ -25,18 +26,18 @@ int main()
 	case 'b':
 	{
 		book b1;
-		std::cout << "Input name, price and number of pages in book: " << std::endl;
-		std::cin >> bookName >> bookPrice >> numberOfPages;
-		b1.set(bookName, bookPrice, numberOfPages);
+		std::cout << "Input name, price, number of pages in book and release date: " << std::endl;
+		std::cin >> bookName >> bookPrice >> numberOfPages >> _d >> _m >> _y;
+		b1.set(bookName, bookPrice, numberOfPages, _d, _m, _y);
 		b1.get();
 		break;
 	}
 	case 'a':
 	{
 		record r1;
-		std::cout << "Input name, price and lenth in minutes in book: " << std::endl;
-		std::cin >> bookName >> bookPrice >> minutes;
-		r1.set(bookName, bookPrice, minutes);
+		std::cout << "Input name, price, lenth in minutes in book and release date: " << std::endl;
+		std::cin >> bookName >> bookPrice >> minutes >> _d >> _m >> _y;
+		r1.set(bookName, bookPrice, minutes, _d, _m, _y);
 		r1.get();
 		break;
 	}

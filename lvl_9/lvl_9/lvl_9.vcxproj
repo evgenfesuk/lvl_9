@@ -139,8 +139,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="book.h" />
+    <ClInclude Include="date.h" />
     <ClInclude Include="disk.h" />
     <ClInclude Include="publication.h" />
+    <ClInclude Include="publication2.h" />
     <ClInclude Include="record.h" />
     <ClInclude Include="sales.h" />
     <ClInclude Include="stdafx.h" />
@@ -148,9 +150,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="book.cpp" />
+    <ClCompile Include="date.cpp" />
     <ClCompile Include="disk.cpp" />
     <ClCompile Include="lvl_9.cpp" />
     <ClCompile Include="publication.cpp" />
+    <ClCompile Include="publication2.cpp" />
     <ClCompile Include="record.cpp" />
     <ClCompile Include="sales.cpp" />
     <ClCompile Include="stdafx.cpp">
