@@ -18,11 +18,12 @@ void disk::get() const
 	else std::cout << "Unknown disk type" << std::endl;
 }
 
-void disk::set(std::string bN, float bP)
+void disk::set()
 {
 	std::cout << "(c)d or (d)vd disk? " << std::endl;
 	char answer;
-	answer = _getche();
+	//answer = _getche(); // при этом варианте в sales.cpp функции set нужно добавить \n перед текстом
+	std::cin >> answer;
 	if (answer=='c')
 	{
 		cd = true;

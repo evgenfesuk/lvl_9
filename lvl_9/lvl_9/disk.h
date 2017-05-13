@@ -8,7 +8,7 @@ public:
 	disk();
 	~disk();
 	void get() const;
-	void set(std::string bN, float bP);
+	void set();
 protected:
 	bool cd, dvd;
 };
