@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+const unsigned int MAX = 12;
 class sales
 {
 public:
@@ -15,7 +16,7 @@ public:
 	void set();
 	void get() const;
 protected:
-	float totalSaled[3]; // массив продаж по мес€цам
 	int numberOfMonth;
+	float totalSaled[MAX]; // массив продаж по мес€цам
 };
 

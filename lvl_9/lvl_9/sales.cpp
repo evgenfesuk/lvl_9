@@ -1,15 +1,17 @@
 #include "stdafx.h"
 #include "sales.h"
 
+//реализовать проверку на 12 месяцев
 
-sales::sales() // 0 на все 3 месяца
+sales::sales() // 0 на все месяца
 {
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < MAX; i++)
 	{
 		totalSaled[i] = 0;
 	}
 }
 
+//don't using at once
 sales::sales(float _m1, float _m2, float _m3) // инициалиация полученными значениями
 {
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!по возможности переделать на массив!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -18,6 +20,7 @@ sales::sales(float _m1, float _m2, float _m3) // инициалиация полученными значен
 	totalSaled[2] = _m3;
 }
 
+// in use
 sales::sales(float *array, int size)
 {
 	float * ptr;
@@ -49,9 +52,9 @@ void sales::set() // инициалиация полученными значениями
 	}
 }
 
-void sales::get() const // показываем продажи за 3 месяца. кол-во месяцев указывается в цикле
+void sales::get() const // показываем продажи за numberOfMonth месяца
 {
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < numberOfMonth; i++)
 	{
 		std::cout << "Month " << i+1 << ": " << totalSaled[i] << std::endl;
 	}
