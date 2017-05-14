@@ -7,7 +7,7 @@ class book :
 {
 public:
 	book(); // пустой конструктор
-	book(std::string bN, float bP, int _numberOfPages, float _m1, float _m2, float _m3, unsigned short _d, unsigned short _m, unsigned short _y);
+	book(std::string bN, float bP, int _numberOfPages, float *array, int size, unsigned short _d, unsigned short _m, unsigned short _y);
 	void set(std::string bN, float bP, int _numberOfPages, unsigned short _d, unsigned short _m, unsigned short _y);
 	/*
 	bN - имя книги

@@ -6,7 +6,7 @@ book::book() : publication2(), numberOfPages(0), sales()
 {
 }
 
-book::book(std::string bN, float bP, int _numberOfPages, float _m1, float _m2, float _m3, unsigned short _d, unsigned short _m, unsigned short _y) : publication2(bN, bP, _d, _m, _y), numberOfPages(_numberOfPages), sales(_m1, _m2, _m3)
+book::book(std::string bN, float bP, int _numberOfPages, float *array, int size, unsigned short _d, unsigned short _m, unsigned short _y) : publication2(bN, bP, _d, _m, _y), numberOfPages(_numberOfPages), sales(array, size)
 {
 	// создание книги со всей информацией через конструктор
 }
