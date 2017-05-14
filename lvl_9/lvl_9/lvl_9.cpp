@@ -44,6 +44,9 @@ int main()
 	default:
 		break;
 	}
+	/*float a[3] = { 1, 2, 3 };
+	sales s(a, 3);
+	s.get();*/
 	system("pause");
     return 0;
 }
