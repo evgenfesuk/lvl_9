@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="book" Collapsed="true">
+    <Position X="6.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAABAAQAQAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>book.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="date" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAAAAAAAAACAQAAAAAAAQAAAAABAAgAQAAAAA=</HashCode>
+      <FileName>date.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="disk" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAAAAAAAAAAAAAAAQAQAAAAAAAAAAEAAAAAAAIAAA=</HashCode>
+      <FileName>disk.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="publication" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAABAAAAAAAAAAEAAQAQAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>publication.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="publication2">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAQAQAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>publication2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="record" Collapsed="true">
+    <Position X="2" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAQQQAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>record.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sales" Collapsed="true">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAEQAQAAAAACAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>sales.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
